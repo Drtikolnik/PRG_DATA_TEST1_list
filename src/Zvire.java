@@ -7,13 +7,23 @@ public class Zvire {
     public Zvire(String jmeno, String druh, int vek) {
         this.jmeno = jmeno;
         this.druh = druh;
-        this.vek = vek;
+        if (vek >= 0 && vek <= 300) {
+            this.vek = vek;
+        }
+
     }
 
 
     public String toString() {
         return "Jméno: " +jmeno + ", Druh: " + druh + ", Věk: " + vek;
     }
+
+
+
+
+
+
+
 
     public String getJmeno() {
         return jmeno;
